@@ -1,0 +1,132 @@
+@font-face {
+font-family: LoveloBlack;
+src: url(/fonts/LoveloBlack.otf);
+}
+
+.start {
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/lindsay-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+.intro {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-family: LoveloBlack;
+      color: #FFF;
+      text-align: center;
+}
+
+#desktop-menu {
+  font-family: LoveloBlack;
+  position: fixed;
+  top:20px;
+  right:15px;
+}
+td {
+  padding-right: 20px;
+  color: #FFF;
+}
+
+/*.buttons {
+  text-align: center;
+}*/
+
+button {
+  border-radius: 20px;
+}
+
+#left-button {
+  padding: 6px 25px 5px;
+  margin-right: 10px;
+  color: #FFF;
+  background-color: #FB7475;
+  border: solid;
+  border-color: #FB7475;
+}
+
+#left-button:hover {
+  background-color: transparent;
+  color: #FB7475;
+}
+
+#right-button {
+  background-color: transparent;
+  padding: 8px 35px 5px 35px;
+  color: #FB7475;
+  border-color: #FB7475;
+  border: solid;
+  outline: none;
+}
+
+#right-button:hover {
+  color: #FFF;
+  background-color: #FB7475;
+  border-color: #FB7475;
+}
+
+#name-intro {
+  font-size: 60px;
+}
+
+@media only screen and (max-width:796px){
+        #left-button {
+          margin-bottom: 10px;
+          margin-right: 0px;
+        }
+    }
+@media only screen and (min-width:960px){
+        /* styles for browsers larger than 960px; */
+    }
+    @media only screen and (min-width:1440px){
+        /* styles for browsers larger than 1440px; */
+    }
+    @media only screen and (min-width:2000px){
+        /* for sumo sized (mac) screens */
+    }
+
+    /* Phones */
+    @media only screen and (max-device-width:480px){
+      .start {
+        background-position: 40% 0%;
+      }
+
+      #right-button {
+        margin-top: 10px;
+        margin-right: 0px;
+      }
+
+      #left-button {
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+    }
+    @media only screen and (device-width:768px){
+      start {
+        background-position: 40% 0%;
+      }
+    }
+    /* Tablets */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      .start {
+        background-position: 40% 0%;
+      }
+      #right-button {
+        margin-top: 15px;
+      }
+      #left-button {
+        margin-right: 0px;
+      }
+
+
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
